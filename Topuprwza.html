@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINK TOP-UP RAWIZAAD_768</title>
+  <style>
+    table {
+      margin: 20px 0;
+      border-collapse: collapse;
+    }
+
+    .badan1 {
+      background-image: url('https://i.imgur.com/cwfx7cx.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    .color01 {
+      color: #ffffff;
+    }
+    
+    .tabel {
+      width: 100px;
+      font-size: 10px;
+      height:100px;
+    }
+    
+    .tawa {
+      color: #4896F4
+    }
+    
+    .rawizaad {
+      width: 200px;
+      height: 230px;
+    }
+    
+    .cekbox {
+      width: 80px;
+      height: 40px;
+    }
+    
+  </style>
+</head>
+<body class="badan1"><center>
+  <h1 style="text-align: center; color: firebrick; display: inline-block; margin-right: 10px">TOP-UP RAWIZAAD_768</h1></center>
+    <center><img src="https://i.imgur.com/FCRL5oW.png" style="margin: 0auto; display: block; display: inline-block; margin-right: 10px" class="rawizaad"></center>
+  <form id="mainForm">
+    <!-- Tabel Radio Button -->
+    <table style="color: green">
+      <tr>
+        <td><label><input type="radio" name="mainRadio" value="Option 1" onclick="showTable(1)"> Option 1</td></label>
+        <td><label><input type="radio" name="mainRadio" value="Option 2" onclick="showTable(2)"> Option 2</td></label>
+        <td><label><input type="radio" name="mainRadio" value="Option 3" onclick="showTable(3)"> Option 3</td></label>
+      </tr>
+    </table>
+
+    <!-- Tabel Dinamis -->
+    <div id="dynamicTables">
+      <div id="table1" class="hidden">
+        <h3>Sub-Options for Option 1</h3>
+        <table>
+          <tr>
+            <td><label><input type="radio" name="subRadio" value="Sub 1-1"> Sub 1-1</td></label>
+            <td><label><input type="radio" name="subRadio" value="Sub 1-2"> Sub 1-2</td></label>
+            <td><label><input type="radio" name="subRadio" value="Sub 1-3"> Sub 1-3</td></label>
+          </tr>
+        </table>
+      </div>
+      <div id="table2" class="hidden">
+        <h2 style="color:#ffb700">TOP-UP FREE FIRE / FF</h2>
+        <table border="4">
+          <tr style="color:#ffffff; font-style:italic; font-size:15px; background-color:#555555">
+            <th><b class="tabel">NO</th><th><b>DIAMOND</th><th><b>HARGA</th><th><b>TOMBOL PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333">
+           <td>1</td><td>5 DIAMOND</td><td>Rp. 1.000,00</td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF5DM" onclick="checkOnlyOne(this)"></label></td>
+             <!--Tab to edit-->
+          </tr>
+          <tr style="background-color:#333333">
+           <td>1</td><td>5 DIAMOND</td><td>Rp. 1.000,00</td><td><label><input type="checkbox" name="subRadio" value="TUFF5DM" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#fffff5">
+            <td><input type="checkbox" name="subRadio" value="Sub 2-3"> Sub 2-3</td>
+          </tr>
+        </table>
+          <script>
+           function checkOnlyOne(checkbox) {
+            var checkboxes = document.getElementsByName('subRadio');
+             checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false;
+          });
+        }
+        </script>
+      </div>
+      <div id="table3" class="hidden">
+        <h3>Sub-Options for Option 3</h3>
+        <table>
+          <tr>
+            <td><input type="radio" name="subRadio" value="Sub 3-1"> Sub 3-1</td>
+            <td><input type="radio" name="subRadio" value="Sub 3-2"> Sub 3-2</td>
+            <td><input type="radio" name="subRadio" value="Sub 3-3"> Sub 3-3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <label for="name" class="color01">Nama Anda:</label>
+    <input placeholder="Masukan nama yang terdaftar!" type="text" id="name" name="name" required>
+    <br><br>
+    <label for="password" class="color01">Password:</label>
+    <input placeholder="Jika anda memiliki" type="password" id="password" name="password" required>
+    <br><br>
+    <label for="id"class="color01">ID/Nomor:</label>
+    <input placeholder="Untuk ml *id (server)*" type="text" id="id" name="id" required>
+    <br><br>
+    <table style="color: white">
+      <tr>
+        <td colspan="3"><label><input type="radio; color: #ffffff" name="mainRadio" value="Option 1" onclick="showTable(1)"> Option 1</td></label>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="mainRadio" value="Option 1" onclick="showTable(1)"> Option 1</td></label>
+        <td><label><input type="radio" name="mainRadio" value="Option 2" onclick="showTable(2)"> Option 2</td></label>
+        <td><label><input type="radio" name="mainRadio" value="Option 3" onclick="showTable(3)"> Option 3</td></label>
+      </tr>
+    </table>
+    <label for="amount" class="color01">Jumlah:</label>
+    <input placeholder="Jumlah 1-5x" type="number" id="amount" name="amount" required>
+    <br><br>
+    <button type="button" onclick="submitForm()">Kirim</button>
+    <p class="error" id="error"></p>
+  </form>
+
+  <script>
+    const validPasswords = ["1234", "4321"];
+    const validNames = ["wildan", "febri"];
+
+    function showTable(option) {
+      document.querySelectorAll('#dynamicTables > div').forEach(div => div.classList.add('hidden'));
+      document.getElementById(`table${option}`).classList.remove('hidden');
+    }
+
+    function submitForm() {
+      const name = document.getElementById('name').value.toLowerCase();
+      const password = document.getElementById('password').value;
+      const id = document.getElementById('id').value;
+      const amount = document.getElementById('amount').value;
+
+      const mainRadio = document.querySelector('input[name="mainRadio"]:checked');
+      const subRadio = document.querySelector(`#dynamicTables input[name^="subRadio"]:checked`);
+      const errorElement = document.getElementById('error');
+
+         if (!mainRadio || !subRadio || !id || !amount) {
+        errorElement.textContent = "Nominal, nama, id,dan jumlah. semua harus diisi!";
+        return;
+      }
+
+      if (!validNames.includes(name)) {
+        errorElement.textContent = "Nama anda tidak terdaftar!";
+        return;
+      }
+
+      if (!validPasswords.includes(password)) {
+        errorElement.textContent = "Password anda salah";
+        return;
+      }
+   
+      errorElement.textContent = "";
+      const message = `Nama: ${name}, ID: ${id}, Jumlah: ${amount}, Pilihan: ${mainRadio.value}, Sub-Pilihan: ${subRadio.value}`;
+      const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
+      window.open(whatsappLink, '_blank');
+    }
+  </script>
+</body>
+  </html>
